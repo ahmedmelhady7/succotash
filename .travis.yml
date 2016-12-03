@@ -25,4 +25,4 @@ script:
   - export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/
   - echo $PATH
   - echo $JAVA_HOME
-  - xvfb-run polymer test
+  - polymer test
