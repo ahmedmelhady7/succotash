@@ -17,12 +17,12 @@ before_script:
   - bower install
 script:
   - echo $JAVA_HOME
-  - ls -ltrh /usr/lib/jvm/
+  - ls -ltrh /usr/lib/jvm/jdk1.8.0_65
   - which java
   - ls -ltrh /usr/bin/jav*
-  - export "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/"
+  - export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_65/bin/java
   - echo $PATH
-  - export PATH=$PATH:/usr/bin/java
+  - export PATH=$PATH:/usr/bin/:/usr/lib/jvm/jdk1.8.0_65/bin
   - echo $PATH
   - echo $JAVA_HOME
   - xvfb-run polymer test
