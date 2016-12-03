@@ -18,7 +18,11 @@ before_script:
 script:
   - echo $JAVA_HOME
   - ls -ltrh /usr/lib/jvm/
+  - which java
+  - ls -ltrh /usr/bin/jav*
   - export "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/"
+  - echo $PATH
   - export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/
+  - echo $PATH
   - echo $JAVA_HOME
   - xvfb-run polymer test
