@@ -16,4 +16,5 @@ before_script:
   - npm install -g bower polymer-cli
   - bower install
 script:
+  - export "JAVA_HOME=/usr/lib/jvm/java-6-openjdk/"
   - xvfb-run polymer test
