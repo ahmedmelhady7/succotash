@@ -22,7 +22,7 @@ script:
   - ls -ltrh /usr/bin/jav*
   - export "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/"
   - echo $PATH
-  - export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/
+  - export PATH=$PATH:/usr/bin/java
   - echo $PATH
   - echo $JAVA_HOME
-  - polymer test
+  - xvfb-run polymer test
