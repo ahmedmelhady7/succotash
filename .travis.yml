@@ -17,7 +17,7 @@ before_script:
   - bower install
 script:
   - echo $JAVA_HOME
-  - ls -ltrh /usr/lib/jvm/java-6-openjdk/
+  - ls -ltrh /usr/lib/jvm/
   - export "JAVA_HOME=/usr/lib/jvm/java-6-openjdk/"
   - echo $JAVA_HOME
   - xvfb-run polymer test
